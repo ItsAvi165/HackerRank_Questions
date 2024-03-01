@@ -23,10 +23,9 @@
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
-import java.io.*;
 import java.util.*;
 
-public class Solution {
+class Solution {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -52,5 +51,6 @@ public class Solution {
             }
         }
         System.out.println(ans);
+        sc.close();
     }
 }

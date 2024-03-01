@@ -36,7 +36,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Solution {
+class Solution {
 
     public static void main(String[] args) {
         /*
@@ -65,8 +65,9 @@ public class Solution {
                 count++;
             }
         }
-        //OR using hashset
-        //hs.add(X[i]+" "+Y[i]); //just add combination of x and y co-ordinate as one element
+        // OR using hashset
+        // hs.add(X[i]+" "+Y[i]); //just add combination of x and y co-ordinate as one
+        // element
         System.out.println(count);
         sc.close();
 

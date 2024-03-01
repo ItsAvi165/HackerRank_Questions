@@ -28,7 +28,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Solution {
+class Solution {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -43,7 +43,8 @@ public class Solution {
         HashMap<Integer, Integer> xpoints = new HashMap<Integer, Integer>();
         HashMap<Integer, Integer> ypoints = new HashMap<Integer, Integer>();
 
-//Storing x co-ordinates in xpoints hashmap and y co-ordinate in ypoints hashmap
+        // Storing x co-ordinates in xpoints hashmap and y co-ordinate in ypoints
+        // hashmap
         for (int i = 0; i < n; i++) {
             if (xpoints.containsKey(points[i][0])) {
                 xpoints.put(points[i][0], xpoints.get(points[i][0]) + 1);
@@ -59,9 +60,10 @@ public class Solution {
         int count = 0;
         for (int i = 0; i < n; i++) {// counting all triangles considering right angle is at each point
 
-          //count number of points whose x and y co-ordinates are same to the iterating point with which
-          //we can form the right angled triangles
-          //also -1 the point where the right angle is i.e iterating point
+            // count number of points whose x and y co-ordinates are same to the iterating
+            // point with which
+            // we can form the right angled triangles
+            // also -1 the point where the right angle is i.e iterating point
 
             if (xpoints.get(points[i][0]) >= 1 && ypoints.get(points[i][1]) >= 1) {
                 count += ((xpoints.get(points[i][0]) - 1) * (ypoints.get(points[i][1]) - 1));
